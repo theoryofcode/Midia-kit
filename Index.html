@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- EDITAR: título e descrição que aparecem no Google e ao compartilhar o link -->
+  <title>Nome da Criadora | Mídia Kit</title>
+  <meta name="description" content="Criadora de conteúdo de lifestyle, moda e música. Conheça os números, formatos e como fazer parceria.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ============ MENU ============ -->
+  <header class="topo" id="topo">
+    <div class="container topo__barra">
+      <!-- EDITAR: nome curto que aparece no menu -->
+      <a href="#inicio" class="topo__logo">Nome da Criadora</a>
+
+      <button class="menu-botao" id="menuBotao" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="menu" id="menu" aria-label="Navegação principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#metricas">Números</a>
+        <a href="#formatos">Parcerias</a>
+        <a href="#galeria">Portfólio</a>
+        <a href="#contato" class="menu__cta">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ 1. HERO ============ -->
+    <section class="hero" id="inicio">
+      <div class="container hero__grade">
+        <div class="hero__texto">
+          <!-- EDITAR: nome da criadora -->
+          <h1>Nome da Criadora</h1>
+          <!-- EDITAR: @ do Instagram e link do perfil -->
+          <a class="hero__arroba" href="https://instagram.com/nomedela" target="_blank" rel="noopener">@nomedela</a>
+          <!-- EDITAR: slogan / bio curta -->
+          <p class="hero__bio">Criadora de Conteúdo | Lifestyle, Moda &amp; Música | Transformando a rotina em inspiração</p>
+
+          <div class="hero__botoes">
+            <!-- EDITAR: troque o link pelo seu e-mail ou WhatsApp (ex.: https://wa.me/5541999999999) -->
+            <a href="mailto:contato@nomedela.com" class="botao botao--principal">Entrar em Contato</a>
+            <!-- EDITAR: se tiver o Mídia Kit em PDF, troque "#metricas" por "midia-kit.pdf" -->
+            <a href="#metricas" class="botao botao--secundario">Ver Mídia Kit</a>
+          </div>
+        </div>
+
+        <div class="hero__foto">
+          <!-- EDITAR: foto de perfil. Salve na pasta "imagens" com o nome perfil.jpg (ou troque o caminho) -->
+          <img src="imagens/perfil.jpg" alt="Foto de perfil de Nome da Criadora" width="480" height="600">
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 2. SOBRE MIM ============ -->
+    <section class="secao" id="sobre">
+      <div class="container sobre__grade">
+        <div class="sobre__imagem">
+          <!-- EDITAR: segunda foto (imagens/sobre.jpg) -->
+          <img src="imagens/sobre.jpg" alt="Nome da Criadora se arrumando em frente ao espelho" width="520" height="650" loading="lazy">
+        </div>
+        <div class="sobre__texto">
+          <h2>Sobre mim</h2>
+          <!-- EDITAR: textos de apresentação -->
+          <p>Eu transformo momentos simples do dia em conteúdo que inspira. Nos vídeos de arrumando-se, mostro o processo de verdade: a escolha do look, a música que toca ao fundo e o meu jeito de montar cada produção, sem filtro de perfeição.</p>
+          <p>Moda e música sempre caminharam juntas na minha vida, e é essa mistura que dá identidade ao meu perfil. Minha audiência me acompanha pela autenticidade, e é por isso que as marcas parceiras entram na minha rotina de forma natural.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 3. MÉTRICAS ============ -->
+    <section class="secao secao--escura" id="metricas">
+      <div class="container">
+        <h2>Números e alcance</h2>
+        <!-- EDITAR OS NÚMEROS:
+             data-valor = o número (use ponto para decimais)
+             data-sufixo = o que vem depois (K, %, K+)
+             O texto de dentro do <strong> é o valor final caso o JavaScript não carregue. -->
+        <div class="metricas">
+          <article class="metrica">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><path d="M16 4.8a3.5 3.5 0 0 1 0 6.4M18 14.4c2 .8 3.5 2.6 3.5 5.6"/></svg>
+            <strong data-valor="15.4" data-sufixo="K" data-decimais="1">15.4K</strong>
+            <span>Seguidores no Instagram</span>
+          </article>
+
+          <article class="metrica">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10.2A4.3 4.3 0 0 1 12 7.3a4.3 4.3 0 0 1 7.5 2.5C19.5 15.400 12 20 12 20z"/></svg>
+            <strong data-valor="8.5" data-sufixo="%" data-decimais="1">8.5%</strong>
+            <span>Taxa de engajamento média</span>
+          </article>
+
+          <article class="metrica">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12s3.5-6.500 9-6.500S21 12 21 12s-3.500 6.500-9 6.500S3 12 3 12z"/><circle cx="12" cy="12" r="2.800"/></svg>
+            <strong data-valor="45" data-sufixo="K+" data-decimais="0">45K+</strong>
+            <span>Alcance mensal de contas</span>
+          </article>
+
+          <article class="metrica">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.500"/><path d="M12 3.500v8.500l6 4.200"/></svg>
+            <strong data-valor="85" data-sufixo="%" data-decimais="0">85%</strong>
+            <span>Público feminino (18 a 28 anos)</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 4. FORMATOS E PARCERIAS ============ -->
+    <section class="secao" id="formatos">
+      <div class="container">
+        <h2>Formatos e oportunidades de parceria</h2>
+        <p class="secao__intro">O que eu entrego para as marcas, do roteiro à publicação.</p>
+
+        <div class="formatos">
+          <!-- EDITAR: título e descrição de cada formato -->
+          <article class="formato">
+            <h3>Reels &amp; Vídeos Curtos</h3>
+            <p>Conteúdo dinâmico com integração orgânica de produtos: looks, rotina e arrume-se comigo.</p>
+          </article>
+          <article class="formato">
+            <h3>Stories Diários</h3>
+            <p>Sequências interativas, unboxing, provadores e direcionamento com link.</p>
+          </article>
+          <article class="formato">
+            <h3>Fotos no Feed &amp; Presença</h3>
+            <p>Postagens estáticas focadas em estética e valorização visual da marca.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 5. GALERIA ============ -->
+    <section class="secao secao--areia" id="galeria">
+      <div class="container">
+        <h2>Destaques do portfólio</h2>
+        <p class="secao__intro">Alguns trabalhos e momentos do meu feed.</p>
+
+        <!-- EDITAR: coloque as fotos na pasta "imagens" com os nomes post-1.jpg até post-6.jpg
+             (ou troque os caminhos). Para adicionar mais, copie um bloco <a class="post"> inteiro.
+             O link (href) leva ao post no Instagram. -->
+        <div class="galeria">
+          <a class="post" href="https://instagram.com/nomedela" target="_blank" rel="noopener"><img src="imagens/post-1.jpg" alt="Post 1 do portfólio" loading="lazy"></a>
+          <a class="post" href="https://instagram.com/nomedela" target="_blank" rel="noopener"><img src="imagens/post-2.jpg" alt="Post 2 do portfólio" loading="lazy"></a>
+          <a class="post" href="https://instagram.com/nomedela" target="_blank" rel="noopener"><img src="imagens/post-3.jpg" alt="Post 3 do portfólio" loading="lazy"></a>
+          <a class="post" href="https://instagram.com/nomedela" target="_blank" rel="noopener"><img src="imagens/post-4.jpg" alt="Post 4 do portfólio" loading="lazy"></a>
+          <a class="post" href="https://instagram.com/nomedela" target="_blank" rel="noopener"><img src="imagens/post-5.jpg" alt="Post 5 do portfólio" loading="lazy"></a>
+          <a class="post" href="https://instagram.com/nomedela" target="_blank" rel="noopener"><img src="imagens/post-6.jpg" alt="Post 6 do portfólio" loading="lazy"></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ============ 6. RODAPÉ E CONTATO ============ -->
+  <footer class="rodape" id="contato">
+    <div class="container">
+      <h2>Vamos criar juntas?</h2>
+      <p class="rodape__intro">Para orçamentos e parcerias, fale diretamente comigo.</p>
+
+      <div class="rodape__contatos">
+        <!-- EDITAR: e-mail profissional -->
+        <a href="mailto:contato@nomedela.com" class="botao botao--principal" id="botaoEmail">contato@nomedela.com</a>
+        <!-- EDITAR: número do WhatsApp comercial (código do país + DDD + número, só dígitos) -->
+        <a href="https://wa.me/5541999999999?text=Ol%C3%A1!%20Vi%20seu%20M%C3%ADdia%20Kit%20e%20gostaria%20de%20conversar." class="botao botao--secundario" target="_blank" rel="noopener">WhatsApp comercial</a>
+      </div>
+
+      <!-- EDITAR: links das redes sociais (troque o href de cada um) -->
+      <ul class="redes">
+        <li><a href="https://instagram.com/nomedela" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3.500" y="3.500" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17" cy="7" r=".6"/></svg></a></li>
+        <li><a href="https://tiktok.com/@nomedela" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M14 4v10.500a3.500 3.500 0 1 1-3.500-3.500"/><path d="M14 4c.4 2.600 2 4.200 4.500 4.500"/></svg></a></li>
+        <li><a href="https://youtube.com/@nomedela" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="4"/><path d="M10.500 9.500v5l4-2.500z"/></svg></a></li>
+        <li><a href="https://open.spotify.com/user/nomedela" target="_blank" rel="noopener" aria-label="Spotify"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.500"/><path d="M7.500 10c3-1 6.500-.7 9 .8M8 13c2.500-.7 5-.5 7.500.8M8.500 15.800c2-.5 4-.3 5.800.6"/></svg></a></li>
+      </ul>
+
+      <!-- EDITAR: ano e nome nos direitos autorais -->
+      <p class="rodape__copy">&copy; <span id="ano">2026</span> Nome da Criadora. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
